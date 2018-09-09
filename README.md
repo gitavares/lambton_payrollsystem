@@ -1,2 +1,7 @@
 # lambton_payrollsystem
-MAD3004 Term Project - Lambton College - Payroll System
+F2018 - MAD3004 Term Project - Lambton College - Payroll System
+
+Group Name: AGG
+Antonio - merendaz@gmail.com
+Giselle - gitavares@gmail.com
+Gurjeet - gurjit.babrah@gmail.com
