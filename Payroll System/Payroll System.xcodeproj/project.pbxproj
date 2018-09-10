@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3CC586902144A9120068E691 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5868F2144A9120068E691 /* main.swift */; };
 		3CC586972144A9390068E691 /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586962144A9390068E691 /* IPrintable.swift */; };
+		3CC58699214705C70068E691 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC58698214705C70068E691 /* Vehicle.swift */; };
+		3CC5869B214705DB0068E691 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5869A214705DB0068E691 /* Car.swift */; };
+		3CC5869D214705EB0068E691 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5869C214705EB0068E691 /* Motorcycle.swift */; };
+		3CC5869F214706A00068E691 /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5869E214706A00068E691 /* PartTime.swift */; };
+		3CC586A1214706BC0068E691 /* CommissionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A0214706BC0068E691 /* CommissionBasedPartTime.swift */; };
+		3CC586A3214706E20068E691 /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A2214706E20068E691 /* FixedBasedPartTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +33,12 @@
 		3CC5868C2144A9120068E691 /* Payroll System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Payroll System"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5868F2144A9120068E691 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3CC586962144A9390068E691 /* IPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
+		3CC58698214705C70068E691 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		3CC5869A214705DB0068E691 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		3CC5869C214705EB0068E691 /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		3CC5869E214706A00068E691 /* PartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
+		3CC586A0214706BC0068E691 /* CommissionBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommissionBasedPartTime.swift; sourceTree = "<group>"; };
+		3CC586A2214706E20068E691 /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,12 @@
 			children = (
 				3CC5868F2144A9120068E691 /* main.swift */,
 				3CC586962144A9390068E691 /* IPrintable.swift */,
+				3CC58698214705C70068E691 /* Vehicle.swift */,
+				3CC5869A214705DB0068E691 /* Car.swift */,
+				3CC5869C214705EB0068E691 /* Motorcycle.swift */,
+				3CC5869E214706A00068E691 /* PartTime.swift */,
+				3CC586A0214706BC0068E691 /* CommissionBasedPartTime.swift */,
+				3CC586A2214706E20068E691 /* FixedBasedPartTime.swift */,
 			);
 			path = "Payroll System";
 			sourceTree = "<group>";
@@ -122,7 +140,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC586A3214706E20068E691 /* FixedBasedPartTime.swift in Sources */,
+				3CC586A1214706BC0068E691 /* CommissionBasedPartTime.swift in Sources */,
+				3CC58699214705C70068E691 /* Vehicle.swift in Sources */,
+				3CC5869D214705EB0068E691 /* Motorcycle.swift in Sources */,
 				3CC586902144A9120068E691 /* main.swift in Sources */,
+				3CC5869F214706A00068E691 /* PartTime.swift in Sources */,
+				3CC5869B214705DB0068E691 /* Car.swift in Sources */,
 				3CC586972144A9390068E691 /* IPrintable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
