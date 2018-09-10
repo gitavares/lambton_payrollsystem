@@ -1,5 +1,5 @@
 //
-//  PartTime.swift
+//  Intern.swift
 //  Payroll System
 //
 //  Created by Giselle Tavares on 10/09/18.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class PartTime: Employee {
+class Intern: Employee {
     
 }
