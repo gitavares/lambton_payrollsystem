@@ -77,19 +77,51 @@
 		3CC5868E2144A9120068E691 /* Payroll System */ = {
 			isa = PBXGroup;
 			children = (
+				3CC586AD214729080068E691 /* Protocols */,
+				3CC586AB214728B90068E691 /* Employee */,
+				3CC586AA214728480068E691 /* Vehicle */,
 				3CC5868F2144A9120068E691 /* main.swift */,
-				3CC586962144A9390068E691 /* IPrintable.swift */,
+			);
+			path = "Payroll System";
+			sourceTree = "<group>";
+		};
+		3CC586AA214728480068E691 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
 				3CC58698214705C70068E691 /* Vehicle.swift */,
 				3CC5869A214705DB0068E691 /* Car.swift */,
 				3CC5869C214705EB0068E691 /* Motorcycle.swift */,
-				3CC5869E214706A00068E691 /* PartTime.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		3CC586AB214728B90068E691 /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				3CC586AC214728ED0068E691 /* PartTime */,
 				3CC586A82147264A0068E691 /* FullTime.swift */,
-				3CC586A0214706BC0068E691 /* CommissionBasedPartTime.swift */,
-				3CC586A2214706E20068E691 /* FixedBasedPartTime.swift */,
 				3CC586A4214726110068E691 /* Employee.swift */,
 				3CC586A62147262D0068E691 /* Intern.swift */,
 			);
-			path = "Payroll System";
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		3CC586AC214728ED0068E691 /* PartTime */ = {
+			isa = PBXGroup;
+			children = (
+				3CC5869E214706A00068E691 /* PartTime.swift */,
+				3CC586A0214706BC0068E691 /* CommissionBasedPartTime.swift */,
+				3CC586A2214706E20068E691 /* FixedBasedPartTime.swift */,
+			);
+			path = PartTime;
+			sourceTree = "<group>";
+		};
+		3CC586AD214729080068E691 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3CC586962144A9390068E691 /* IPrintable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
