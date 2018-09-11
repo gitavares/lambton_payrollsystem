@@ -9,17 +9,14 @@
 import Foundation
 
 extension Date {
-//    var currentYear = Calendar.Component.year
-    
     var year: Int {
         let currentYear = Calendar.current
         let comp = currentYear.dateComponents(in: TimeZone.current, from: self)
-        
         return comp.year!
     }
 }
 
-extension Int {
+extension Double {
     var currency: String {
         return "$\(self)"
     }

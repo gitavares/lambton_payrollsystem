@@ -8,6 +8,9 @@
 
 import Foundation
 
-class PartTime: Employee {
+class PartTime: Employee, IPrintable {
+    var rate: Double!
+    var hoursWorked: Double!
+    
     
 }
