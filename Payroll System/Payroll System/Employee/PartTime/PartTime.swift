@@ -11,6 +11,4 @@ import Foundation
 class PartTime: Employee, IPrintable {
     var rate: Double!
     var hoursWorked: Double!
-    
-    
 }
