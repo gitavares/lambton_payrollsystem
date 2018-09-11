@@ -18,6 +18,7 @@
 		3CC586A5214726110068E691 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A4214726110068E691 /* Employee.swift */; };
 		3CC586A72147262D0068E691 /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A62147262D0068E691 /* Intern.swift */; };
 		3CC586A92147264A0068E691 /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A82147264A0068E691 /* FullTime.swift */; };
+		3CC586AF214745260068E691 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586AE214745260068E691 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		3CC586A4214726110068E691 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		3CC586A62147262D0068E691 /* Intern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
 		3CC586A82147264A0068E691 /* FullTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
+		3CC586AE214745260068E691 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				3CC586AB214728B90068E691 /* Employee */,
 				3CC586AA214728480068E691 /* Vehicle */,
 				3CC5868F2144A9120068E691 /* main.swift */,
+				3CC586AE214745260068E691 /* Utils.swift */,
 			);
 			path = "Payroll System";
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				3CC5869F214706A00068E691 /* PartTime.swift in Sources */,
 				3CC5869B214705DB0068E691 /* Car.swift in Sources */,
 				3CC586972144A9390068E691 /* IPrintable.swift in Sources */,
+				3CC586AF214745260068E691 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
