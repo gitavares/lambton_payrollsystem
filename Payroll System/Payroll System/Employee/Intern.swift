@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Intern: Employee {
-    
+class Intern: Employee, IPrintable {
+    var schoolName: String!
     
 }

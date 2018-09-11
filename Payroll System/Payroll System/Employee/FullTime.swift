@@ -8,6 +8,24 @@
 
 import Foundation
 
-class FullTime: Employee {
+class FullTime: Employee, IPrintable {
+    var salary: Double
+    var bonus: Double
     
+    // constructor
+    init(salary: Double, bonus: Double, name: String, age: Int){
+        self.salary = salary
+        self.bonus = bonus
+        super.init(name: name, age: age)
+    }
+    
+    // setters
+    func setData(salary: Double, bonus: Double) {
+        self.salary = salary
+        self.bonus = bonus
+    }
+    
+    override func calcEarnings() -> Double {
+        return salary + bonus
+    }
 }
