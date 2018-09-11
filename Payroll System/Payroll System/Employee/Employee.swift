@@ -9,5 +9,14 @@
 import Foundation
 
 class Employee {
+    var name: String!
+    var age: Int!
     
+    func calcBirthYear(age: Int) -> Int {
+        return Date().year - age
+    }
+    
+    func calcEarning() -> Double {
+        return 1000
+    }
 }

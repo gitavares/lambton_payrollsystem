@@ -10,3 +10,5 @@ import Foundation
 
 print("Hello, World!")
 
+print(1000.currency)
+
