@@ -11,7 +11,7 @@ import Foundation
 class FixedBasedPartTime: PartTime
 {
     var FixedAmmount: Double!
-    func calcEarnings(Rate: Double, HoursWorked: Double) -> Double
+    func calcEarnings(Rate: Double, HoursWorked: Double, FixedAmmount: Double) -> Double
     {
         return (Rate * HoursWorked + FixedAmmount)
     }
