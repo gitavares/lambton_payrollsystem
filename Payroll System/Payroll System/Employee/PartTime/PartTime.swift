@@ -9,5 +9,6 @@
 import Foundation
 
 class PartTime: Employee {
-    
+    var Rate: Double!
+    var HoursWorked: Double!
 }
