@@ -17,3 +17,30 @@ print(birthYear.calcBirthYear(age: 40))
 
 let fullTimeEmployee = FullTime(salary: 5000, bonus: 300, name: "Michael Jackson", age: 53)
 print(fullTimeEmployee)
+
+//var s1 = Student(studentId: 1, studentName: "Gi") // to create a new object with the Student type
+////s1.studentId = 1
+////s1.studentName = "Gi"
+//s1.printData()
+//
+//var s2 = s1
+//s2.printData()
+//
+//s1.studentName = "New Student Name"
+//s1.printData()
+//s2.printData()
+//
+//var s3 = Student(studentId: 1000, studentName: "Test Student")
+//
+//var f1 = Faculty() // to create a new object with the Faculty type
+//f1.facultyId = 1
+//f1.facultyName = "Tavares"
+////f1.salary = 1000 // return an error. it's a computer calculate. you cant calculate it
+//f1.printData()
+//
+//var f2 = f1
+//f2.printData()
+//
+//f1.facultyName = "New Faculty Name"
+//f1.printData()
+//f2.printData()

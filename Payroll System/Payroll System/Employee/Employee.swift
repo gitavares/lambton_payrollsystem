@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Employee: IPrintable {
+class Employee: IPrintable, IEmployee {
     // Stored Properties
     var name: String
     var age: Int
@@ -45,7 +45,10 @@ class Employee: IPrintable {
         return genericSalary
     }
     
-    //    func printData(){
-    //        print("Faculty: \(self.facultyId) - \(self.facultyName)")
-    //    }
+    func printMyData() -> String {
+        let birthYear = Employee()
+        
+        print("Name: \(self.name)")
+        print("Year of Birth: \(birthYear.calcBirthYear(age: self.age))")
+    }
 }
