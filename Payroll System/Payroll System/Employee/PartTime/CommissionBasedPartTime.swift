@@ -8,6 +8,15 @@
 
 import Foundation
 
-class CommissionBasedPartTime: PartTime {
-    
+class CommissionBasedPartTime: PartTime
+{
+    var CommisionPerc: Double!
+    func calcEarnings(Rate: Double, HoursWorked: Int, CommisionPerc: Double) -> Double
+    {
+        var Subtotal: Double!
+        var Commision: Double!
+            Subtotal = Rate * Double(HoursWorked)
+            Commision = (CommisionPerc/100) * Subtotal
+        return (Subtotal + Commision)
+    }
 }
