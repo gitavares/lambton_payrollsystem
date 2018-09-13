@@ -8,10 +8,13 @@
 
 import Foundation
 
-protocol IEmployee {
-    var name: String { get set }
-    var age: Int { get set }
+protocol AbstractEmployee {
+    var name: String? { get set }
+    var age: Int? { get set }
+    var vehicle: Vehicle? { get set }
     
     func calcBirthYear(age: Int) -> Int
     func calcEarnings() -> Double
+    func setData(name: String, age: Int)
+    func printMyData() -> String
 }

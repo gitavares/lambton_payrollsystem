@@ -8,11 +8,10 @@
 
 import Foundation
 
-class PartTime: Employee {
-    var rate: Double
-    var hoursWorked: Double
+class PartTime: Employee, AbstractPartTime {
+    var rate: Double?
+    var hoursWorked: Double?
 
-    
     // constructor
     init(rate: Double, hoursWorked: Double, name: String, age: Int){
         self.rate = rate
@@ -20,11 +19,9 @@ class PartTime: Employee {
         super.init(name: name, age: age)
     }
     
-    // setters
     func setData(rate: Double, hoursWorked: Double) {
         self.rate = rate
         self.hoursWorked = hoursWorked
     }
-    
-    
+
 }

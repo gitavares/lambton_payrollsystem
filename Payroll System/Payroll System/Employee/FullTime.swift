@@ -8,9 +8,9 @@
 
 import Foundation
 
-class FullTime: Employee, IPrintable {
-    var salary: Double
-    var bonus: Double
+class FullTime: Employee {
+    var salary: Double?
+    var bonus: Double?
     
     // constructor
     init(salary: Double, bonus: Double, name: String, age: Int){
@@ -19,13 +19,17 @@ class FullTime: Employee, IPrintable {
         super.init(name: name, age: age)
     }
     
-    // setters
     func setData(salary: Double, bonus: Double) {
         self.salary = salary
         self.bonus = bonus
     }
     
     override func calcEarnings() -> Double {
-        return salary + bonus
+        return salary! + bonus!
+    }
+    
+    override func printMyData() -> String {
+        let message = "\(name!), \(age!), \(salary!), \(bonus!)"
+        return message
     }
 }

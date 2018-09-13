@@ -19,7 +19,9 @@
 		3CC586A72147262D0068E691 /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A62147262D0068E691 /* Intern.swift */; };
 		3CC586A92147264A0068E691 /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A82147264A0068E691 /* FullTime.swift */; };
 		3CC586AF214745260068E691 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586AE214745260068E691 /* Utils.swift */; };
-		3CC586B32148BD2A0068E691 /* IEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586B22148BD2A0068E691 /* IEmployee.swift */; };
+		3CC586B32148BD2A0068E691 /* AbstractEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586B22148BD2A0068E691 /* AbstractEmployee.swift */; };
+		3CC586D32149D92B0068E691 /* AbstractPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586D22149D92B0068E691 /* AbstractPartTime.swift */; };
+		3CC586D52149DA4C0068E691 /* AbstractVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586D42149DA4C0068E691 /* AbstractVehicle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,7 +50,9 @@
 		3CC586A62147262D0068E691 /* Intern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
 		3CC586A82147264A0068E691 /* FullTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
 		3CC586AE214745260068E691 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		3CC586B22148BD2A0068E691 /* IEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IEmployee.swift; sourceTree = "<group>"; };
+		3CC586B22148BD2A0068E691 /* AbstractEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractEmployee.swift; sourceTree = "<group>"; };
+		3CC586D22149D92B0068E691 /* AbstractPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractPartTime.swift; sourceTree = "<group>"; };
+		3CC586D42149DA4C0068E691 /* AbstractVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractVehicle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				3CC586962144A9390068E691 /* IPrintable.swift */,
-				3CC586B22148BD2A0068E691 /* IEmployee.swift */,
+				3CC586B22148BD2A0068E691 /* AbstractEmployee.swift */,
+				3CC586D22149D92B0068E691 /* AbstractPartTime.swift */,
+				3CC586D42149DA4C0068E691 /* AbstractVehicle.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -188,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC586A3214706E20068E691 /* FixedBasedPartTime.swift in Sources */,
-				3CC586B32148BD2A0068E691 /* IEmployee.swift in Sources */,
+				3CC586B32148BD2A0068E691 /* AbstractEmployee.swift in Sources */,
 				3CC586A5214726110068E691 /* Employee.swift in Sources */,
 				3CC586A1214706BC0068E691 /* CommissionBasedPartTime.swift in Sources */,
 				3CC58699214705C70068E691 /* Vehicle.swift in Sources */,
@@ -198,6 +204,8 @@
 				3CC586902144A9120068E691 /* main.swift in Sources */,
 				3CC5869F214706A00068E691 /* PartTime.swift in Sources */,
 				3CC5869B214705DB0068E691 /* Car.swift in Sources */,
+				3CC586D52149DA4C0068E691 /* AbstractVehicle.swift in Sources */,
+				3CC586D32149D92B0068E691 /* AbstractPartTime.swift in Sources */,
 				3CC586972144A9390068E691 /* IPrintable.swift in Sources */,
 				3CC586AF214745260068E691 /* Utils.swift in Sources */,
 			);
