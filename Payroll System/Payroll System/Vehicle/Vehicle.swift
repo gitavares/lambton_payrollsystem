@@ -8,6 +8,21 @@
 
 import Foundation
 
-class Vehicle {
+class Vehicle: IPrintable, AbstractVehicle {
+    var make: String?
+    var plate: String?
     
+    init(){
+        self.make = ""
+        self.plate = ""
+    }
+    
+    init(make: String, plate: String) {
+        self.make = make
+        self.plate = plate
+    }
+    
+    func printMyData() -> String {
+        return ""
+    }
 }

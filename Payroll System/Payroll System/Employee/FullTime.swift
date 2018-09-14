@@ -13,10 +13,16 @@ class FullTime: Employee {
     var bonus: Double?
     
     // constructor
+    override init() {
+        super.init()
+        self.salary = Double()
+        self.bonus = Double()
+    }
+    
     init(salary: Double, bonus: Double, name: String, age: Int){
+        super.init(name: name, age: age)
         self.salary = salary
         self.bonus = bonus
-        super.init(name: name, age: age)
     }
     
     func setData(salary: Double, bonus: Double) {
@@ -30,7 +36,11 @@ class FullTime: Employee {
     
     override func printMyData() -> String {
         var message = super.printMyData()
-        message += "\(name!), \(age!), \(salary!), \(bonus!), \(calcBirthYear(age: age!))"
+        message += "Employee is FullTime\n"
+        message += "- Salary: \(self.salary!)\n"
+        message += "- Bonus: \(self.bonus!)\n"
+        message += "- Earnings: \(calcEarnings())\n"
+        message += "************************************\n"
         return message
     }
 }

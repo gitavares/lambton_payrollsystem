@@ -15,6 +15,9 @@ protocol AbstractEmployee {
     
     func calcBirthYear(age: Int) -> Int
     func calcEarnings() -> Double
+//    func calcTotalPayroll() -> Double
+    func calcTotalPayroll(employees: [Employee]) -> String
+    func saveEmployee()
     func setData(name: String, age: Int)
     func printMyData() -> String
 }

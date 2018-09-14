@@ -9,15 +9,18 @@
 import Foundation
 
 // to print some currency -- example
-print(1000.currency)
+//print(1000.currency)
 
 // to print the birth year -- example
-let birthYear = Employee()
-print(birthYear.calcBirthYear(age: 40))
+//let birthYear = Employee()
+//print(birthYear.calcBirthYear(age: 40))
 
 let fullTimeEmployee = FullTime(salary: 5000, bonus: 300, name: "Michael Jackson", age: 53)
 //print(fullTimeEmployee)
 print(fullTimeEmployee.printMyData())
+
+let internEmployee = Intern(name: "Sandra de Sa", age: 60, schoolName: "Lambton College", internSalary: 1000)
+print(internEmployee.printMyData())
 
 
 //var s1 = Student(studentId: 1, studentName: "Gi") // to create a new object with the Student type
