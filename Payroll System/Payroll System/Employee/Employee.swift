@@ -10,7 +10,7 @@ import Foundation
 
 // maybe this class won't be necessary
 
-class Employee: IPrintable, AbstractEmployee {
+class Employee: IPrintable {
     // Stored Properties
     var name: String?
     var age: Int?

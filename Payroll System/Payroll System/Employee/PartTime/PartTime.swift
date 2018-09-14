@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PartTime: Employee, AbstractPartTime {
+class PartTime: Employee {
     var rate: Double?
     var hoursWorked: Double?
 
