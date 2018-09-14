@@ -13,15 +13,19 @@ class PartTime: Employee, AbstractPartTime {
     var hoursWorked: Double?
 
     // constructor
-    init(rate: Double, hoursWorked: Double, name: String, age: Int){
+//    override init() {
+//        self
+//    }
+    
+    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle){
         self.rate = rate
         self.hoursWorked = hoursWorked
-        super.init(name: name, age: age)
+        super.init(name: name, age: age, vehicle: vehicle)
     }
     
-    func setData(rate: Double, hoursWorked: Double) {
-        self.rate = rate
-        self.hoursWorked = hoursWorked
-    }
+//    func setData(rate: Double, hoursWorked: Double) {
+//        self.rate = rate
+//        self.hoursWorked = hoursWorked
+//    }
 
 }

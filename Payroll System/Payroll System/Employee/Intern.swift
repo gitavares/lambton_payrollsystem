@@ -18,8 +18,8 @@ class Intern: Employee {
         self.internSalary = 1000.0
     }
     
-    init(name: String, age: Int, schoolName: String, internSalary: Double) {
-        super.init(name: name, age: age)
+    init(name: String, age: Int, schoolName: String, internSalary: Double, vehicle: Vehicle) {
+        super.init(name: name, age: age, vehicle: vehicle)
         self.schoolName = schoolName
         self.internSalary = internSalary
     }
