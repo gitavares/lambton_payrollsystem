@@ -8,15 +8,16 @@
 
 import Foundation
 
-class Employee: IPrintable {
-    // Stored Properties
-    var name: String
-    var age: Int
+// maybe this class won't be necessary
+
+class Employee: IPrintable, AbstractEmployee {
     
-    // Computed Properties
-    var genericSalary: Double {
-        return 1000.0
-    }
+    
+    // Stored Properties
+    var name: String?
+    var age: Int?
+    var vehicle: Vehicle?
+    
     
     // constructor
     // is mandatory initialize the variable
@@ -30,7 +31,6 @@ class Employee: IPrintable {
         self.age = age
     }
     
-    // setters
     func setData(name: String, age: Int){
         self.name = name
         self.age = age
@@ -42,10 +42,31 @@ class Employee: IPrintable {
     }
     
     func calcEarnings() -> Double {
-        return genericSalary
+        return 0
     }
     
-    //    func printData(){
-    //        print("Faculty: \(self.facultyId) - \(self.facultyName)")
-    //    }
+    func calcTotalPayroll(employees: [Employee]) -> String {
+        var totalPayroll = 0
+        for employee in employees {
+            totalPayroll += 0 // update it here. See how to get the earnings of each kind of employee
+        }
+        
+        return "TOTAL PAYROLL: \(totalPayroll) Canadian Dollars"
+    }
+    
+    func saveEmployee() {
+        // save in a dictionary first
+        // a plus is to save on JSON file
+    }
+    
+    func printMyData() -> String {
+        let birthYear = Employee()
+        var message = "Name: \(self.name!)\n"
+        message += "Year of Birth: \(birthYear.calcBirthYear(age: self.age!))\n"
+
+        if vehicle == nil {
+            message += "Employee has no Vehicle registered\n"
+        }
+        return message
+    }
 }

@@ -8,7 +8,28 @@
 
 import Foundation
 
-class Intern: Employee, IPrintable {
-    var schoolName: String!
+class Intern: Employee {
+    var schoolName: String?
+    var internSalary: Double?
     
+    override init() {
+        super.init()
+        self.schoolName = String()
+        self.internSalary = 1000.0
+    }
+    
+    init(name: String, age: Int, schoolName: String, internSalary: Double) {
+        super.init(name: name, age: age)
+        self.schoolName = schoolName
+        self.internSalary = internSalary
+    }
+    
+    override func printMyData() -> String {
+        var message = super.printMyData()
+        message += "Employee is Intern\n"
+        message += "- School Name: \(self.schoolName!)\n"
+        message += "- Earnings: \(self.internSalary!)\n"
+        message += "************************************\n"
+        return message
+    }
 }
