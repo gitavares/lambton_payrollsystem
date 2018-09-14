@@ -16,7 +16,9 @@ let birthYear = Employee()
 print(birthYear.calcBirthYear(age: 40))
 
 let fullTimeEmployee = FullTime(salary: 5000, bonus: 300, name: "Michael Jackson", age: 53)
-print(fullTimeEmployee)
+//print(fullTimeEmployee)
+print(fullTimeEmployee.printMyData())
+
 
 //var s1 = Student(studentId: 1, studentName: "Gi") // to create a new object with the Student type
 ////s1.studentId = 1

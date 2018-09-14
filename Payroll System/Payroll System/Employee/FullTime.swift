@@ -29,7 +29,8 @@ class FullTime: Employee {
     }
     
     override func printMyData() -> String {
-        let message = "\(name!), \(age!), \(salary!), \(bonus!)"
+        var message = super.printMyData()
+        message += "\(name!), \(age!), \(salary!), \(bonus!), \(calcBirthYear(age: age!))"
         return message
     }
 }

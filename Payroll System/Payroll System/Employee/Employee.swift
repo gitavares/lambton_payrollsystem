@@ -16,6 +16,7 @@ class Employee: IPrintable, AbstractEmployee {
     var age: Int?
     var vehicle: Vehicle?
     
+    
     // constructor
     // is mandatory initialize the variable
     init() {
@@ -44,8 +45,23 @@ class Employee: IPrintable, AbstractEmployee {
     
     func printMyData() -> String {
         let birthYear = Employee()
-        var message = "Name: \(self.name!)"
-        message += "Year of Birth: \(birthYear.calcBirthYear(age: self.age!))"
+        var message = "Name: \(self.name!)\n"
+        message += "Year of Birth: \(birthYear.calcBirthYear(age: self.age!))\n"
+        message += "Employee has "
+        
+        if vehicle != nil {
+//            message += "has a \(vehicle)"
+            message += "a Car\n"
+            message += " - Make\n" // call the make here
+            message += " - Plate\n" // call the plate here
+            message += " - Any other attributes" // call the others attributes here
+        } else {
+            message += "no Vehicle registered\n"
+        }
+        
+        message += "Employee is"
+        
+//        if
         
         return message
     }
