@@ -19,16 +19,16 @@ class FullTime: Employee {
         self.bonus = Double()
     }
     
-    init(salary: Double, bonus: Double, name: String, age: Int){
-        super.init(name: name, age: age)
+    init(salary: Double, bonus: Double, name: String, age: Int, vehicle: Vehicle){
+        super.init(name: name, age: age, vehicle: vehicle)
         self.salary = salary
         self.bonus = bonus
     }
     
-    func setData(salary: Double, bonus: Double) {
-        self.salary = salary
-        self.bonus = bonus
-    }
+//    func setData(salary: Double, bonus: Double) {
+//        self.salary = salary
+//        self.bonus = bonus
+//    }
     
     override func calcEarnings() -> Double {
         return salary! + bonus!

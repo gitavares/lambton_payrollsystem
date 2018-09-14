@@ -11,30 +11,30 @@ import Foundation
 // maybe this class won't be necessary
 
 class Employee: IPrintable, AbstractEmployee {
-    
-    
     // Stored Properties
     var name: String?
     var age: Int?
     var vehicle: Vehicle?
-    
     
     // constructor
     // is mandatory initialize the variable
     init() {
         self.name = String()
         self.age = Int()
+        self.vehicle = Vehicle()
     }
     
-    init(name: String, age: Int){
+    init(name: String, age: Int, vehicle: Vehicle?){
         self.name = name
         self.age = age
+        self.vehicle = vehicle
     }
     
-    func setData(name: String, age: Int){
-        self.name = name
-        self.age = age
-    }
+//    func setData(name: String, age: Int, vehicle: Vehicle?){
+//        self.name = name
+//        self.age = age
+//        self.vehicle = vehicle
+//    }
     
     // methods
     func calcBirthYear(age: Int) -> Int {
@@ -63,9 +63,10 @@ class Employee: IPrintable, AbstractEmployee {
         let birthYear = Employee()
         var message = "Name: \(self.name!)\n"
         message += "Year of Birth: \(birthYear.calcBirthYear(age: self.age!))\n"
-
         if vehicle == nil {
             message += "Employee has no Vehicle registered\n"
+        } else {
+            message += (vehicle?.printMyData())!
         }
         return message
     }

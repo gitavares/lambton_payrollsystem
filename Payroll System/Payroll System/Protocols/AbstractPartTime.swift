@@ -12,6 +12,6 @@ protocol AbstractPartTime {
     var rate: Double? { get set }
     var hoursWorked: Double? { get set }
     
-    func setData(rate: Double, hoursWorked: Double)
+//    func setData(rate: Double, hoursWorked: Double)
     func printMyData() -> String
 }

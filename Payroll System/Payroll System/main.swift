@@ -15,11 +15,14 @@ import Foundation
 //let birthYear = Employee()
 //print(birthYear.calcBirthYear(age: 40))
 
-let fullTimeEmployee = FullTime(salary: 5000, bonus: 300, name: "Michael Jackson", age: 53)
+let vehicleCar = Car(make: "BMW", plate: "FGH8997", doorsQuantity: 4, hasSunroof: true)
+let vehicleMotorcycle = Motorcycle(make: "Harley-Davidson", plate: "TG55RF", cylindersQuantity: 500, hasLuggageRack: true)
+
+let fullTimeEmployee = FullTime(salary: 5000, bonus: 300, name: "Michael Jackson", age: 53, vehicle: vehicleCar)
 //print(fullTimeEmployee)
 print(fullTimeEmployee.printMyData())
 
-let internEmployee = Intern(name: "Sandra de Sa", age: 60, schoolName: "Lambton College", internSalary: 1000)
+let internEmployee = Intern(name: "Sandra de Sa", age: 60, schoolName: "Lambton College", internSalary: 1000, vehicle: vehicleMotorcycle)
 print(internEmployee.printMyData())
 
 
