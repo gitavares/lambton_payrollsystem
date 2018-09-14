@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Vehicle: IPrintable, AbstractVehicle {
+class Vehicle: IPrintable {
     var make: String?
     var plate: String?
     
