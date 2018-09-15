@@ -18,6 +18,7 @@
 		3CC586A5214726110068E691 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A4214726110068E691 /* Employee.swift */; };
 		3CC586A72147262D0068E691 /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A62147262D0068E691 /* Intern.swift */; };
 		3CC586A92147264A0068E691 /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586A82147264A0068E691 /* FullTime.swift */; };
+		3CC586AF214745260068E691 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586AE214745260068E691 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3CC5868C2144A9120068E691 /* Payroll System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Payroll System"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC5868C2144A9120068E691 /* AGG_MAD3004_FinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AGG_MAD3004_FinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5868F2144A9120068E691 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3CC586962144A9390068E691 /* IPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
 		3CC58698214705C70068E691 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		3CC586A4214726110068E691 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		3CC586A62147262D0068E691 /* Intern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
 		3CC586A82147264A0068E691 /* FullTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
+		3CC586AE214745260068E691 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,7 @@
 		3CC586832144A9120068E691 = {
 			isa = PBXGroup;
 			children = (
-				3CC5868E2144A9120068E691 /* Payroll System */,
+				3CC5868E2144A9120068E691 /* AGG_MAD3004_FinalProject */,
 				3CC5868D2144A9120068E691 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,20 +71,21 @@
 		3CC5868D2144A9120068E691 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CC5868C2144A9120068E691 /* Payroll System */,
+				3CC5868C2144A9120068E691 /* AGG_MAD3004_FinalProject */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3CC5868E2144A9120068E691 /* Payroll System */ = {
+		3CC5868E2144A9120068E691 /* AGG_MAD3004_FinalProject */ = {
 			isa = PBXGroup;
 			children = (
 				3CC586AD214729080068E691 /* Protocols */,
 				3CC586AB214728B90068E691 /* Employee */,
 				3CC586AA214728480068E691 /* Vehicle */,
 				3CC5868F2144A9120068E691 /* main.swift */,
+				3CC586AE214745260068E691 /* Utils.swift */,
 			);
-			path = "Payroll System";
+			path = AGG_MAD3004_FinalProject;
 			sourceTree = "<group>";
 		};
 		3CC586AA214728480068E691 /* Vehicle */ = {
@@ -127,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CC5868B2144A9120068E691 /* Payroll System */ = {
+		3CC5868B2144A9120068E691 /* AGG_MAD3004_FinalProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CC586932144A9120068E691 /* Build configuration list for PBXNativeTarget "Payroll System" */;
+			buildConfigurationList = 3CC586932144A9120068E691 /* Build configuration list for PBXNativeTarget "AGG_MAD3004_FinalProject" */;
 			buildPhases = (
 				3CC586882144A9120068E691 /* Sources */,
 				3CC586892144A9120068E691 /* Frameworks */,
@@ -139,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = "Payroll System";
+			name = AGG_MAD3004_FinalProject;
 			productName = "Payroll System";
-			productReference = 3CC5868C2144A9120068E691 /* Payroll System */;
+			productReference = 3CC5868C2144A9120068E691 /* AGG_MAD3004_FinalProject */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -159,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3CC586872144A9120068E691 /* Build configuration list for PBXProject "Payroll System" */;
+			buildConfigurationList = 3CC586872144A9120068E691 /* Build configuration list for PBXProject "AGG_MAD3004_FinalProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CC5868B2144A9120068E691 /* Payroll System */,
+				3CC5868B2144A9120068E691 /* AGG_MAD3004_FinalProject */,
 			);
 		};
 /* End PBXProject section */
@@ -192,6 +195,7 @@
 				3CC5869F214706A00068E691 /* PartTime.swift in Sources */,
 				3CC5869B214705DB0068E691 /* Car.swift in Sources */,
 				3CC586972144A9390068E691 /* IPrintable.swift in Sources */,
+				3CC586AF214745260068E691 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +336,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3CC586872144A9120068E691 /* Build configuration list for PBXProject "Payroll System" */ = {
+		3CC586872144A9120068E691 /* Build configuration list for PBXProject "AGG_MAD3004_FinalProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CC586912144A9120068E691 /* Debug */,
@@ -341,7 +345,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CC586932144A9120068E691 /* Build configuration list for PBXNativeTarget "Payroll System" */ = {
+		3CC586932144A9120068E691 /* Build configuration list for PBXNativeTarget "AGG_MAD3004_FinalProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CC586942144A9120068E691 /* Debug */,
