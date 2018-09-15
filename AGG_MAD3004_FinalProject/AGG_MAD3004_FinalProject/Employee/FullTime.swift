@@ -37,9 +37,9 @@ class FullTime: Employee {
     override func printMyData() -> String {
         var message = super.printMyData()
         message += "Employee is FullTime\n"
-        message += "- Salary: \(self.salary!)\n"
-        message += "- Bonus: \(self.bonus!)\n"
-        message += "- Earnings: \(calcEarnings())\n"
+        message += "- Salary: \(self.salary!.currency)\n"
+        message += "- Bonus: \(self.bonus!.currency)\n"
+        message += "- Earnings: \(calcEarnings().currency)\n"
         message += "************************************\n"
         return message
     }

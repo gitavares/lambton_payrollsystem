@@ -13,9 +13,11 @@ class PartTime: Employee {
     var hoursWorked: Double?
 
     // constructor
-//    override init() {
-//        self
-//    }
+    override init() {
+        super.init()
+        self.rate = Double()
+        self.hoursWorked = Double()
+    }
     
     init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle){
         self.rate = rate
@@ -23,9 +25,9 @@ class PartTime: Employee {
         super.init(name: name, age: age, vehicle: vehicle)
     }
     
-//    func setData(rate: Double, hoursWorked: Double) {
-//        self.rate = rate
-//        self.hoursWorked = hoursWorked
-//    }
+    override func printMyData() -> String {
+        var message = "Employee is PartTime / "
+        return message
+    }
 
 }

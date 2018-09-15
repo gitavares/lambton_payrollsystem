@@ -28,7 +28,7 @@ class Intern: Employee {
         var message = super.printMyData()
         message += "Employee is Intern\n"
         message += "- School Name: \(self.schoolName!)\n"
-        message += "- Earnings: \(self.internSalary!)\n"
+        message += "- Earnings: \(self.internSalary!.currency)\n"
         message += "************************************\n"
         return message
     }

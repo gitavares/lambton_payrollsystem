@@ -18,6 +18,10 @@ extension Date {
 
 extension Double {
     var currency: String {
-        return "$\(self)"
+        return "$ \(self)"
+    }
+    
+    var percent: String {
+        return "\(self)%"
     }
 }

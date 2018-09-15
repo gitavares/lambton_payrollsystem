@@ -11,13 +11,11 @@ import Foundation
 // maybe this class won't be necessary
 
 class Employee: IPrintable {
-    // Stored Properties
     var name: String?
     var age: Int?
     var vehicle: Vehicle?
     
     // constructor
-    // is mandatory initialize the variable
     init() {
         self.name = String()
         self.age = Int()
@@ -30,12 +28,6 @@ class Employee: IPrintable {
         self.vehicle = vehicle
     }
     
-//    func setData(name: String, age: Int, vehicle: Vehicle?){
-//        self.name = name
-//        self.age = age
-//        self.vehicle = vehicle
-//    }
-    
     // methods
     func calcBirthYear(age: Int) -> Int {
         return Date().year - age
@@ -46,7 +38,7 @@ class Employee: IPrintable {
     }
     
     func calcTotalPayroll(employees: [Employee]) -> String {
-        var totalPayroll = 0
+        var totalPayroll = 0.0
         for employee in employees {
             totalPayroll += 0 // update it here. See how to get the earnings of each kind of employee
         }
