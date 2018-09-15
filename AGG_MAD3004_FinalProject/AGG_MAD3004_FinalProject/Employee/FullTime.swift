@@ -39,7 +39,7 @@ class FullTime: Employee {
         message += "Employee is FullTime\n"
         message += "- Salary: \(self.salary!)\n"
         message += "- Bonus: \(self.bonus!)\n"
-        message += "- Earnings: \(calcEarnings())\n"
+        message += "- Earnings: \(calcEarnings().currency)\n"
         message += "************************************\n"
         return message
     }
