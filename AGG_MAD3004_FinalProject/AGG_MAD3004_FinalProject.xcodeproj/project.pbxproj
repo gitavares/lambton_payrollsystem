@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0DBA6021503C870099E291 /* Payroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DBA5F21503C870099E291 /* Payroll.swift */; };
 		3CC586902144A9120068E691 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5868F2144A9120068E691 /* main.swift */; };
 		3CC586972144A9390068E691 /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586962144A9390068E691 /* IPrintable.swift */; };
 		3CC58699214705C70068E691 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC58698214705C70068E691 /* Vehicle.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C0DBA5F21503C870099E291 /* Payroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payroll.swift; sourceTree = "<group>"; };
 		3CC5868C2144A9120068E691 /* AGG_MAD3004_FinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AGG_MAD3004_FinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5868F2144A9120068E691 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3CC586962144A9390068E691 /* IPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0DBA6121503CC00099E291 /* Payroll */ = {
+			isa = PBXGroup;
+			children = (
+				3C0DBA5F21503C870099E291 /* Payroll.swift */,
+			);
+			path = Payroll;
+			sourceTree = "<group>";
+		};
 		3CC586832144A9120068E691 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		3CC5868E2144A9120068E691 /* AGG_MAD3004_FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				3C0DBA6121503CC00099E291 /* Payroll */,
 				3CC586AD214729080068E691 /* Protocols */,
 				3CC586AB214728B90068E691 /* Employee */,
 				3CC586AA214728480068E691 /* Vehicle */,
@@ -191,6 +202,7 @@
 				3CC586A92147264A0068E691 /* FullTime.swift in Sources */,
 				3CC5869D214705EB0068E691 /* Motorcycle.swift in Sources */,
 				3CC586A72147262D0068E691 /* Intern.swift in Sources */,
+				3C0DBA6021503C870099E291 /* Payroll.swift in Sources */,
 				3CC586902144A9120068E691 /* main.swift in Sources */,
 				3CC5869F214706A00068E691 /* PartTime.swift in Sources */,
 				3CC5869B214705DB0068E691 /* Car.swift in Sources */,
