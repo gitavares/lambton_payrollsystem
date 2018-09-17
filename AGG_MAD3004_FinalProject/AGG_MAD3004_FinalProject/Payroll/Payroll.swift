@@ -12,7 +12,15 @@ class Payroll: IPrintable {
     
     var totalPayroll: Double?
     
-    func saveEmployee() {
+    func saveEmployeeOnPayroll() {
+        
+    }
+    
+    func updateEmployeeOnPayroll() {
+        
+    }
+    
+    func removeEmployeeFromPayroll() {
         
     }
     
