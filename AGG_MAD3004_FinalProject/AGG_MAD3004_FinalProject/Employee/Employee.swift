@@ -47,7 +47,7 @@ class Employee: IPrintable {
     
     func calcTotalPayroll(employees: [Employee]) -> String {
         var totalPayroll = 0
-        for employee in employees {
+        for _ in employees {
             totalPayroll += 0 // update it here. See how to get the earnings of each kind of employee
         }
         

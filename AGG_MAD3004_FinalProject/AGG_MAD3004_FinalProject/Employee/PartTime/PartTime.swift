@@ -23,6 +23,7 @@ class PartTime: Employee {
         super.init(name: name, age: age, vehicle: vehicle)
     }
     
+    
 //    func setData(rate: Double, hoursWorked: Double) {
 //        self.rate = rate
 //        self.hoursWorked = hoursWorked
