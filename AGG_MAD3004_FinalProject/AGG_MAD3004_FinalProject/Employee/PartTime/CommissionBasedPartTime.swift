@@ -17,27 +17,25 @@ class CommissionBasedPartTime: PartTime
         self.commisionPerc = Double()
     }
     
-    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle, commissionPerc: Double) {
+    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle?, commissionPerc: Double) {
         super.init(rate: rate, hoursWorked: hoursWorked, name: name, age: age, vehicle: vehicle)
         self.commisionPerc = commissionPerc
     }
     
-    func calcEarnings(rate: Double, hoursWorked: Double, commisionPerc: Double) -> Double
+    func calcEarnings(rateTimesHoursWorked: Double, commisionPerc: Double) -> Double
     {
-        var subtotal: Double!
-        var commission: Double!
-        subtotal = rate * hoursWorked
-        commission = (self.commisionPerc!/100) * subtotal
-        return (subtotal + commission)
+        return (self.commisionPerc!/100) * rateTimesHoursWorked + rateTimesHoursWorked
     }
     
     override func printMyData() -> String {
-        var message = "Commissioned\n"
-        message += "- Rate: \(self.rate!.currency)"
-        message += "- Hours Worked: \(self.hoursWorked!)"
-        message += "- Commission: \(self.commisionPerc!)"
+        var message = super.printMyData()
+        message += "Commissioned\n"
+        message += "- Rate: \(self.rate!.currency)\n"
+        message += "- Hours Worked: \(self.hoursWorked!)\n"
+        message += "- Commission: \(self.commisionPerc!.percent)\n"
         let rateTimesHoursWorked = self.rate! * self.hoursWorked!
-        message += "- Earnings: \(calcEarnings(rate: self.rate!, hoursWorked: self.hoursWorked!, commisionPerc: self.commisionPerc!).currency) (\(rateTimesHoursWorked) + \(self.commisionPerc?.percent) of \(rateTimesHoursWorked))"
+        message += "- Earnings: \(calcEarnings(rateTimesHoursWorked: rateTimesHoursWorked, commisionPerc: self.commisionPerc!).currency) (\(rateTimesHoursWorked.currency) + \(self.commisionPerc!.percent) of \(rateTimesHoursWorked.currency))\n"
+        message += "************************************\n"
         return message
     }
 }
