@@ -25,6 +25,10 @@ class PartTime: Employee {
         super.init(name: name, age: age, vehicle: vehicle)
     }
     
+    override func calcEarnings() -> Double {
+        return self.rate! * self.hoursWorked!
+    }
+    
     override func printMyData() -> String {
         var message = super.printMyData()
         message += "Employee is PartTime / "

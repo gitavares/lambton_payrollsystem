@@ -24,6 +24,10 @@ class Intern: Employee {
         self.internSalary = internSalary
     }
     
+    override func calcEarnings() -> Double {
+        return self.internSalary!
+    }
+    
     override func printMyData() -> String {
         var message = super.printMyData()
         message += "Employee is Intern\n"

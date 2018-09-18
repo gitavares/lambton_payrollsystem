@@ -19,8 +19,30 @@ let internEmployee1 = Intern(name: "Sandra de Sa", age: 60, schoolName: "Lambton
 let partTimeCommissionEmployee1 = CommissionBasedPartTime(rate: 30, hoursWorked: 10, name: "John", age: 25, vehicle: vehicleCar2, commissionPerc: 20)
 let partTimeFixedAmountEmployee1 = FixedBasedPartTime(rate: 30, hoursWorked: 10, name: "Cindy", age: 40, vehicle: nil, fixedAmount: 40)
 
-// Print Payroll
-print(fullTimeEmployee1.printMyData())
-print(internEmployee1.printMyData())
-print(partTimeCommissionEmployee1.printMyData())
-print(partTimeFixedAmountEmployee1.printMyData())
+// Print Employees
+//print(fullTimeEmployee1.printMyData())
+//print(internEmployee1.printMyData())
+//print(partTimeCommissionEmployee1.printMyData())
+//print(partTimeFixedAmountEmployee1.printMyData())
+
+//var objArray: [IPrintable]
+//objArray = []
+//
+//objArray.append(fullTimeEmployee1)
+//objArray.append(internEmployee1)
+//objArray.append(partTimeCommissionEmployee1)
+//objArray.append(partTimeFixedAmountEmployee1)
+//
+//for obj in objArray {
+//    print(obj.printMyData())
+//}
+
+//save employees on Dictionary
+var payroll = Payroll()
+payroll.saveEmployeeOnPayroll(employee: fullTimeEmployee1)
+payroll.saveEmployeeOnPayroll(employee: internEmployee1)
+payroll.saveEmployeeOnPayroll(employee: partTimeCommissionEmployee1)
+payroll.saveEmployeeOnPayroll(employee: partTimeFixedAmountEmployee1)
+
+print(payroll.printMyData())
+
