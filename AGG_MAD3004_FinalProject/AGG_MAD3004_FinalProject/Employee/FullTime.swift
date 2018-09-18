@@ -25,6 +25,7 @@ class FullTime: Employee {
         self.bonus = bonus
     }
     
+    
 //    func setData(salary: Double, bonus: Double) {
 //        self.salary = salary
 //        self.bonus = bonus

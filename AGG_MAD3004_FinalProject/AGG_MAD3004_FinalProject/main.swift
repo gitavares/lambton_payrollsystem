@@ -11,7 +11,7 @@ import Foundation
 // Vehicles - objects
 let vehicleCar1 = Car(make: "BMW", plate: "FGH8997", doorsQuantity: 4, hasSunroof: true)
 let vehicleCar2 = Car(make: "Mercedez", plate: "YYT8978", doorsQuantity: 2, hasSunroof: false)
-let vehicleMotorcycle1 = Motorcycle(make: "Harley-Davidson", plate: "TG55RF", cylindersQuantity: 500, hasLuggageRack: true)
+let vehicleMotorcycle1 = Motorcycle(make: "Harley-Davidson", plate: "TG55RF", powerCC: 500, hasLuggageRack: true)
 
 // Employees - objects
 let fullTimeEmployee1 = FullTime(salary: 5000, bonus: 300, name: "Michael Jackson", age: 53, vehicle: vehicleCar1)
