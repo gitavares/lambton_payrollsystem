@@ -24,23 +24,34 @@ class Payroll: IPrintable {
     }
     
     func saveEmployeeOnPayroll(employee: Employee) {
-        
+        let id = listOfEmployeesOnPayroll.count
+        listOfEmployeesOnPayroll.updateValue(employee, forKey: id)
     }
     
-    func updateEmployeeOnPayroll() {
-        
-    }
-    
-    func removeEmployeeFromPayroll() {
-        
-    }
-    
-//    func calcTotalPayroll(listOfEmployeeOnPayroll: (Int: Employee)) {
+//    func updateEmployeeOnPayroll() {
+//
+//    }
+//
+//    func removeEmployeeFromPayroll() {
 //
 //    }
     
+    func calcTotalPayroll() -> Double {
+        var totalPayroll = Double()
+        for employee in listOfEmployeesOnPayroll {
+            totalPayroll += employee.value.calcEarnings()
+        }
+        return totalPayroll
+    }
+    
     func printMyData() -> String {
-        var message = "TOTAL PAYROLL: XXXX Canadian Dollars"
+        for employee in listOfEmployeesOnPayroll {
+            print(employee.value.printMyData())
+        }
+        
+        var message = "Total of employees: \(listOfEmployeesOnPayroll.count)\n"
+        message += "TOTAL PAYROLL: \(calcTotalPayroll().currency) Canadian Dollars"
+        message += ""
         return message
     }
     

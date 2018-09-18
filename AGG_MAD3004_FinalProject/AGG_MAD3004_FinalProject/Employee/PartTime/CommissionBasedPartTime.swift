@@ -11,6 +11,7 @@ import Foundation
 class CommissionBasedPartTime: PartTime
 {
     var commisionPerc: Double?
+    var rateTimesHoursWorked = PartTime().calcEarnings()
     
     override init() {
         super.init()
@@ -22,9 +23,10 @@ class CommissionBasedPartTime: PartTime
         self.commisionPerc = commissionPerc
     }
     
-    func calcEarnings(rateTimesHoursWorked: Double, commisionPerc: Double) -> Double
+    override func calcEarnings() -> Double
     {
-        return (self.commisionPerc!/100) * rateTimesHoursWorked + rateTimesHoursWorked
+        rateTimesHoursWorked = super.calcEarnings()
+        return (rateTimesHoursWorked * self.commisionPerc!/100) + rateTimesHoursWorked
     }
     
     override func printMyData() -> String {
@@ -33,8 +35,7 @@ class CommissionBasedPartTime: PartTime
         message += "- Rate: \(self.rate!.currency)\n"
         message += "- Hours Worked: \(self.hoursWorked!)\n"
         message += "- Commission: \(self.commisionPerc!.percent)\n"
-        let rateTimesHoursWorked = self.rate! * self.hoursWorked!
-        message += "- Earnings: \(calcEarnings(rateTimesHoursWorked: rateTimesHoursWorked, commisionPerc: self.commisionPerc!).currency) (\(rateTimesHoursWorked.currency) + \(self.commisionPerc!.percent) of \(rateTimesHoursWorked.currency))\n"
+        message += "- Earnings: \(calcEarnings().currency) (\(rateTimesHoursWorked.currency) + \(self.commisionPerc!.percent) of \(rateTimesHoursWorked.currency))\n"
         message += "************************************\n"
         return message
     }

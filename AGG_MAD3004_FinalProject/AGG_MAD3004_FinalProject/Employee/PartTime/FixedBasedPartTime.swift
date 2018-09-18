@@ -11,6 +11,7 @@ import Foundation
 class FixedBasedPartTime: PartTime
 {
     var fixedAmount: Double?
+    var rateTimesHoursWorked = PartTime().calcEarnings()
     
     override init() {
         super.init()
@@ -22,9 +23,10 @@ class FixedBasedPartTime: PartTime
         self.fixedAmount = fixedAmount
     }
     
-    func calcEarnings(rateTimesHoursWorked: Double, fixedAmount: Double) -> Double
+    override func calcEarnings() -> Double
     {
-        return rateTimesHoursWorked + self.fixedAmount!
+        rateTimesHoursWorked = super.calcEarnings()
+        return self.fixedAmount! + rateTimesHoursWorked
     }
     
     override func printMyData() -> String {
@@ -33,8 +35,7 @@ class FixedBasedPartTime: PartTime
         message += "- Rate: \(self.rate!.currency)\n"
         message += "- Hours Worked: \(self.hoursWorked!)\n"
         message += "- Fixed Amount: \(self.fixedAmount!.currency)\n"
-        let rateTimesHoursWorked = self.rate! * self.hoursWorked!
-        message += "- Earnings: \(calcEarnings(rateTimesHoursWorked: rateTimesHoursWorked, fixedAmount: self.fixedAmount!).currency) (\(rateTimesHoursWorked.currency) + \(self.fixedAmount!.currency))\n"
+        message += "- Earnings: \(calcEarnings().currency) (\(rateTimesHoursWorked.currency) + \(self.fixedAmount!.currency))\n"
         message += "************************************\n"
         return message
     }

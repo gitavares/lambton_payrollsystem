@@ -32,7 +32,7 @@ class FullTime: Employee {
 //    }
     
     override func calcEarnings() -> Double {
-        return salary! + bonus!
+        return self.salary! + self.bonus!
     }
     
     override func printMyData() -> String {
