@@ -9,18 +9,18 @@
 import Foundation
 
 class Motorcycle: Vehicle {
-    var cylindersQuantity: Int?
+    var powerCC: Int?
     var hasLuggageRack: Bool?
     
     override init() {
         super.init()
-        self.cylindersQuantity = 2
+        self.powerCC = 2
         self.hasLuggageRack = true
     }
     
-    init(make: String, plate: String, cylindersQuantity: Int, hasLuggageRack: Bool) {
+    init(make: String, plate: String, powerCC: Int, hasLuggageRack: Bool) {
         super.init(make: make, plate: plate)
-        self.cylindersQuantity = cylindersQuantity
+        self.powerCC = powerCC
         self.hasLuggageRack = hasLuggageRack
     }
     
@@ -28,7 +28,7 @@ class Motorcycle: Vehicle {
         var message = "Employee has a Motorcycle\n"
         message += "- Make: \(self.make!)\n"
         message += "- Plate: \(self.plate!)\n"
-        message += "- Cylinders Quantity: \(self.cylindersQuantity!)\n"
+        message += "- Power CC: \(self.powerCC!)\n"
         if self.hasLuggageRack! {
             message += "- The motorcycle has Luggage Rack\n"
         }

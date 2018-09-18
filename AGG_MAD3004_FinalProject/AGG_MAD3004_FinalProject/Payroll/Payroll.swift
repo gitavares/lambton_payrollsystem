@@ -10,7 +10,7 @@ import Foundation
 
 class Payroll: IPrintable {
     
-    var listOfEmployeesOnPayroll: (Int: Employee)
+    var listOfEmployeesOnPayroll: [Int: Employee]
     var totalPayroll: Double?
     
     init() {
@@ -18,7 +18,7 @@ class Payroll: IPrintable {
         self.totalPayroll = Double()
     }
     
-    init(listOfEmployeesOnPayroll: (Int: Employee), totalPayroll: Double) {
+    init(listOfEmployeesOnPayroll: [Int: Employee], totalPayroll: Double) {
         self.listOfEmployeesOnPayroll = listOfEmployeesOnPayroll
         self.totalPayroll = totalPayroll
     }
@@ -35,12 +35,13 @@ class Payroll: IPrintable {
         
     }
     
-    func calcTotalPayroll(listOfEmployeeOnPayroll) {
-        
-    }
+//    func calcTotalPayroll(listOfEmployeeOnPayroll: (Int: Employee)) {
+//
+//    }
     
     func printMyData() -> String {
         var message = "TOTAL PAYROLL: XXXX Canadian Dollars"
+        return message
     }
     
     

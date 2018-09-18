@@ -10,7 +10,7 @@ import Foundation
 
 // maybe this class won't be necessary
 
-class Employee: IPrintable {
+class Employee: IPrintable, Error {
     var name: String?
     var age: Int?
     var vehicle: Vehicle?
@@ -35,15 +35,6 @@ class Employee: IPrintable {
     
     func calcEarnings() -> Double {
         return 0
-    }
-    
-    func calcTotalPayroll(employees: [Employee]) -> String {
-        var totalPayroll = 0.0
-        for employee in employees {
-            totalPayroll += 0 // update it here. See how to get the earnings of each kind of employee
-        }
-        
-        return "TOTAL PAYROLL: \(totalPayroll) Canadian Dollars"
     }
     
     func saveEmployee() {

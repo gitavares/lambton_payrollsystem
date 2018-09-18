@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C0DBA6021503C870099E291 /* Payroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DBA5F21503C870099E291 /* Payroll.swift */; };
+		3C0DBA76215070080099E291 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DBA75215070080099E291 /* Exceptions.swift */; };
 		3CC586902144A9120068E691 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5868F2144A9120068E691 /* main.swift */; };
 		3CC586972144A9390068E691 /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586962144A9390068E691 /* IPrintable.swift */; };
 		3CC58699214705C70068E691 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC58698214705C70068E691 /* Vehicle.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		3C0DBA5F21503C870099E291 /* Payroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payroll.swift; sourceTree = "<group>"; };
+		3C0DBA75215070080099E291 /* Exceptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
 		3CC5868C2144A9120068E691 /* AGG_MAD3004_FinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AGG_MAD3004_FinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5868F2144A9120068E691 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3CC586962144A9390068E691 /* IPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				3CC586AA214728480068E691 /* Vehicle */,
 				3CC5868F2144A9120068E691 /* main.swift */,
 				3CC586AE214745260068E691 /* Utils.swift */,
+				3C0DBA75215070080099E291 /* Exceptions.swift */,
 			);
 			path = AGG_MAD3004_FinalProject;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC586A3214706E20068E691 /* FixedBasedPartTime.swift in Sources */,
+				3C0DBA76215070080099E291 /* Exceptions.swift in Sources */,
 				3CC586A5214726110068E691 /* Employee.swift in Sources */,
 				3CC586A1214706BC0068E691 /* CommissionBasedPartTime.swift in Sources */,
 				3CC58699214705C70068E691 /* Vehicle.swift in Sources */,
