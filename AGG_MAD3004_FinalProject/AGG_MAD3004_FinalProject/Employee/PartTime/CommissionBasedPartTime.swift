@@ -17,9 +17,10 @@ internal class CommissionBasedPartTime: PartTime
         super.init()
         self.commisionPerc = Double()
     }
-    
-    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle?, commissionPerc: Double) {
-        super.init(rate: rate, hoursWorked: hoursWorked, name: name, age: age, vehicle: vehicle)
+    // This init throws an Exception
+    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle?, commissionPerc: Double) throws {
+        try validateCommission(commission: commissionPerc)
+        try super.init(rate: rate, hoursWorked: hoursWorked, name: name, age: age, vehicle: vehicle)
         self.commisionPerc = commissionPerc
     }
     

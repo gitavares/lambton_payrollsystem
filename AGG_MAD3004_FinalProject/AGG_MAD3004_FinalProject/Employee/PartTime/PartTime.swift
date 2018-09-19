@@ -19,7 +19,10 @@ internal class PartTime: Employee {
         self.hoursWorked = Double()
     }
     
-    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle?){
+    // This init throws an Exception
+    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle?) throws {
+        try validateRate(rate: rate)
+        try validateHoursWorked(hoursWorked: hoursWorked)
         self.rate = rate
         self.hoursWorked = hoursWorked
         super.init(name: name, age: age, vehicle: vehicle)

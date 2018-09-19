@@ -18,8 +18,10 @@ internal class FixedBasedPartTime: PartTime
         self.fixedAmount = Double()
     }
     
-    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle?, fixedAmount: Double) {
-        super.init(rate: rate, hoursWorked: hoursWorked, name: name, age: age, vehicle: vehicle)
+    // This init throws an Exception
+    init(rate: Double, hoursWorked: Double, name: String, age: Int, vehicle: Vehicle?, fixedAmount: Double) throws {
+        try validateFixedAmount(fixedAmount: fixedAmount)
+        try super.init(rate: rate, hoursWorked: hoursWorked, name: name, age: age, vehicle: vehicle)
         self.fixedAmount = fixedAmount
     }
     

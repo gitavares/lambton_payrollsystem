@@ -9,55 +9,96 @@
 import Foundation
 
 // Exceptions
-public enum EarningsError: Error {
+enum EarningsError: Error {
     case NonZero
-    case NonNegative(s: Double)
+    case NonNegative
     case LessThanTwoThousand
 }
 
-public enum RateError: Error {
+enum BonusError: Error {
     case NonZero
-    case NonNegative(s: Double)
-    case LessThanTwoThousand
+    case NonNegative
 }
 
-public enum ComissionError: Error {
+enum InternSalaryError: Error {
     case NonZero
-    case NonNegative(s: Double)
-    case LessThanTwoThousand
+    case NonNegative
 }
 
-public enum HoursWorkedError: Error {
+enum RateError: Error {
     case NonZero
-    case NonNegative(s: Double)
-    case LessThanTwoThousand
+    case NonNegative
 }
 
-public enum FixedAmountError: Error {
+enum HoursWorkedError: Error {
     case NonZero
-    case NonNegative(s: Double)
-    case LessThanTwoThousand
+    case NonNegative
 }
 
-public func validateSalary(salary: Double) throws -> Bool {
+enum CommissionError: Error {
+    case NonZero
+    case NonNegative
+}
+
+enum FixedAmountError: Error {
+    case NonZero
+    case NonNegative
+}
+
+func validateSalary(salary: Double) throws {
     if salary == 0 {
         throw EarningsError.NonZero
     } else if salary < 0 {
-        throw EarningsError.NonNegative(s: salary)
+        throw EarningsError.NonNegative
     } else if salary < 2000 {
         throw EarningsError.LessThanTwoThousand
     }
-    return true
 }
 
-//do {
-//    print(try validateSalary(salary: 1000))
-//} catch EarningsError.NonZero {
-//    print("validateSalary: NonZero")
-//} catch EarningsError.NonNegative(let s) {
-//    print("validateSalary: NonNegative \(s)")
-//} catch EarningsError.LessThanTwoThousand {
-//    print("validateSalary: LessThanTwoThousand")
-//} catch {
-//    print(error)
-//}
+func validateBonus(bonus: Double) throws {
+    if bonus == 0 {
+        throw BonusError.NonZero
+    } else if bonus < 0 {
+        throw BonusError.NonNegative
+    }
+}
+
+func validateInternSalary(internSalary: Double) throws {
+    if internSalary == 0 {
+        throw InternSalaryError.NonZero
+    } else if internSalary < 0 {
+        throw InternSalaryError.NonNegative
+    }
+}
+
+func validateRate(rate: Double) throws {
+    if rate == 0 {
+        throw RateError.NonZero
+    } else if rate < 0 {
+        throw RateError.NonNegative
+    }
+}
+
+func validateHoursWorked(hoursWorked: Double) throws {
+    if hoursWorked == 0 {
+        throw HoursWorkedError.NonZero
+    } else if hoursWorked < 0 {
+        throw HoursWorkedError.NonNegative
+    }
+}
+
+func validateCommission(commission: Double) throws {
+    if commission == 0 {
+        throw CommissionError.NonZero
+    } else if commission < 0 {
+        throw CommissionError.NonNegative
+    }
+}
+
+func validateFixedAmount(fixedAmount: Double) throws {
+    if fixedAmount == 0 {
+        throw FixedAmountError.NonZero
+    } else if fixedAmount < 0 {
+        throw FixedAmountError.NonNegative
+    }
+}
