@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CommissionBasedPartTime: PartTime
+internal class CommissionBasedPartTime: PartTime
 {
     var commisionPerc: Double?
     var rateTimesHoursWorked = PartTime().calcEarnings()

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Car: Vehicle {
+internal class Car: Vehicle {
     var doorsQuantity: Int?
     var hasSunroof: Bool?
     

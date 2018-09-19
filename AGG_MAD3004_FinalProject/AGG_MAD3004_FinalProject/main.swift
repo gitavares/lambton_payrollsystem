@@ -8,6 +8,7 @@
 
 import Foundation
 
+// read all these objects from a JSON file and put it in the dictionary
 // Vehicles - objects
 let vehicleCar1 = Car(make: "BMW", plate: "FGH8997", doorsQuantity: 4, hasSunroof: true)
 let vehicleCar2 = Car(make: "Mercedez", plate: "YYT8978", doorsQuantity: 2, hasSunroof: false)
@@ -37,7 +38,88 @@ let partTimeFixedAmountEmployee1 = FixedBasedPartTime(rate: 30, hoursWorked: 10,
 //    print(obj.printMyData())
 //}
 
-//save employees on Dictionary
+// read employee data from JSON file
+//let jsonString = """
+//    {
+//    "employees":
+//        [
+//            {
+//                "id": 1,
+//                "name": "Michael Jackson",
+//                "age": 53,
+//                "vehicle": {
+//                    "type": "Car",
+//                    "make": "BMW",
+//                    "plate": "FGH8997",
+//                    "doorsQuantity": 4,
+//                    "hasSunroof": true
+//                },
+//                "employment": {
+//                    "type": "FullTime",
+//                    "salary": 5000,
+//                    "bonus": 300
+//                }
+//            },
+//            {
+//                "id": 2,
+//                "name": "Sandra de Sa",
+//                "age": 60,
+//                "vehicle": {
+//                    "type": "Motorcycle",
+//                    "make": "Harley-Davidson",
+//                    "plate": "TG55RF",
+//                    "powerCC": 500,
+//                    "hasLuggageRack": true
+//                },
+//                "employment": {
+//                    "type": "Intern",
+//                    "salary": 1000
+//                }
+//            },
+//            {
+//                "id": 3,
+//                "name": "John",
+//                "age": 25,
+//                "employment": {
+//                    "type": "CommissionBasedPartTime",
+//                    "rate": 30,
+//                    "hoursWorked": 10,
+//                    "commisionPerc": 20
+//                }
+//            }
+//        ]
+//    }
+//"""
+//
+//let data = jsonString.data(using: String.Encoding.utf8, allowLossyConversion: false)!
+//do {
+//    let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
+//    if let employees = json["employees"] as? [AnyObject] {
+//        print(employees)
+//    }
+//} catch let error as NSError {
+//    print("Failed to load: \(error.localizedDescription)")
+//}
+
+
+//if path = Bundle.main.path(forResource: "Employees", ofType: "json") {
+//    do {
+//        let data = try Data(contentsOf: URL(fileURLWithPath: path!), options: .mappedIfSafe)
+//        let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
+//        if let jsonResult = jsonResult as? Dictionary<String, AnyObject>, let person = jsonResult["person"] as? [Any] {
+//            // do stuff
+//        }
+//    } catch {
+//        // handle error
+//    }
+//}
+
+
+
+
+
+
+// save employees on Dictionary
 var payroll = Payroll()
 payroll.saveEmployeeOnPayroll(employee: fullTimeEmployee1)
 payroll.saveEmployeeOnPayroll(employee: internEmployee1)

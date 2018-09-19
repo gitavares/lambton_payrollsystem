@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FixedBasedPartTime: PartTime
+internal class FixedBasedPartTime: PartTime
 {
     var fixedAmount: Double?
     var rateTimesHoursWorked = PartTime().calcEarnings()
