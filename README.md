@@ -1,4 +1,4 @@
-# lambton_payrollsystem
+# AGG_MAD3004_FinalProject
 F2018 - MAD3004 Term Project - Lambton College - Payroll System
 
 # Group Name: AGG
