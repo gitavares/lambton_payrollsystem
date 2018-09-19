@@ -17,8 +17,10 @@ internal class Intern: Employee {
         self.schoolName = String()
         self.internSalary = 1000.0
     }
-    
-    init(name: String, age: Int, schoolName: String, internSalary: Double, vehicle: Vehicle) {
+   
+    // This init throws an Exception
+    init(name: String, age: Int, schoolName: String, internSalary: Double, vehicle: Vehicle) throws {
+        try validateInternSalary(internSalary: internSalary)
         super.init(name: name, age: age, vehicle: vehicle)
         self.schoolName = schoolName
         self.internSalary = internSalary
