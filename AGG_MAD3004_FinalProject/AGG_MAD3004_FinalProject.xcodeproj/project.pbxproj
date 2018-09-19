@@ -10,7 +10,7 @@
 		3C0DBA6021503C870099E291 /* Payroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DBA5F21503C870099E291 /* Payroll.swift */; };
 		3C0DBA76215070080099E291 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DBA75215070080099E291 /* Exceptions.swift */; };
 		3C0DBA922151D6FA0099E291 /* Employees.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C0DBA912151D6FA0099E291 /* Employees.json */; };
-		3C0DBA942152A6F80099E291 /* MockEmployeeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DBA932152A6F80099E291 /* MockEmployeeJson.swift */; };
+		3C670A162152CDD90067B24E /* Payroll2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C670A152152CDD90067B24E /* Payroll2.swift */; };
 		3CC586902144A9120068E691 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5868F2144A9120068E691 /* main.swift */; };
 		3CC586972144A9390068E691 /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586962144A9390068E691 /* IPrintable.swift */; };
 		3CC58699214705C70068E691 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC58698214705C70068E691 /* Vehicle.swift */; };
@@ -42,7 +42,7 @@
 		3C0DBA5F21503C870099E291 /* Payroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payroll.swift; sourceTree = "<group>"; };
 		3C0DBA75215070080099E291 /* Exceptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
 		3C0DBA912151D6FA0099E291 /* Employees.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Employees.json; sourceTree = "<group>"; };
-		3C0DBA932152A6F80099E291 /* MockEmployeeJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmployeeJson.swift; sourceTree = "<group>"; };
+		3C670A152152CDD90067B24E /* Payroll2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payroll2.swift; sourceTree = "<group>"; };
 		3CC5868C2144A9120068E691 /* AGG_MAD3004_FinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AGG_MAD3004_FinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5868F2144A9120068E691 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3CC586962144A9390068E691 /* IPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
@@ -73,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				3C0DBA5F21503C870099E291 /* Payroll.swift */,
+				3C670A152152CDD90067B24E /* Payroll2.swift */,
 			);
 			path = Payroll;
 			sourceTree = "<group>";
@@ -102,7 +103,6 @@
 				3CC586AA214728480068E691 /* Vehicle */,
 				3CC5868F2144A9120068E691 /* main.swift */,
 				3C0DBA912151D6FA0099E291 /* Employees.json */,
-				3C0DBA932152A6F80099E291 /* MockEmployeeJson.swift */,
 				3CC586AE214745260068E691 /* Utils.swift */,
 				3C0DBA75215070080099E291 /* Exceptions.swift */,
 			);
@@ -217,8 +217,8 @@
 				3CC586902144A9120068E691 /* main.swift in Sources */,
 				3CC5869F214706A00068E691 /* PartTime.swift in Sources */,
 				3CC5869B214705DB0068E691 /* Car.swift in Sources */,
-				3C0DBA942152A6F80099E291 /* MockEmployeeJson.swift in Sources */,
 				3CC586972144A9390068E691 /* IPrintable.swift in Sources */,
+				3C670A162152CDD90067B24E /* Payroll2.swift in Sources */,
 				3CC586AF214745260068E691 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -39,57 +39,69 @@ let partTimeFixedAmountEmployee1 = FixedBasedPartTime(rate: 30, hoursWorked: 10,
 //}
 
 // read employee data from JSON file
-//let jsonString = """
-//    {
-//    "employees":
-//        [
-//            {
-//                "id": 1,
-//                "name": "Michael Jackson",
-//                "age": 53,
-//                "vehicle": {
-//                    "type": "Car",
-//                    "make": "BMW",
-//                    "plate": "FGH8997",
-//                    "doorsQuantity": 4,
-//                    "hasSunroof": true
-//                },
-//                "employment": {
-//                    "type": "FullTime",
-//                    "salary": 5000,
-//                    "bonus": 300
-//                }
-//            },
-//            {
-//                "id": 2,
-//                "name": "Sandra de Sa",
-//                "age": 60,
-//                "vehicle": {
-//                    "type": "Motorcycle",
-//                    "make": "Harley-Davidson",
-//                    "plate": "TG55RF",
-//                    "powerCC": 500,
-//                    "hasLuggageRack": true
-//                },
-//                "employment": {
-//                    "type": "Intern",
-//                    "salary": 1000
-//                }
-//            },
-//            {
-//                "id": 3,
-//                "name": "John",
-//                "age": 25,
-//                "employment": {
-//                    "type": "CommissionBasedPartTime",
-//                    "rate": 30,
-//                    "hoursWorked": 10,
-//                    "commisionPerc": 20
-//                }
-//            }
-//        ]
+let jsonString = """
+    {
+    "employees":
+        [
+            {
+                "id": 1,
+                "name": "Michael Jackson",
+                "age": 53,
+                "vehicle": {
+                    "type": "Car",
+                    "make": "BMW",
+                    "plate": "FGH8997",
+                    "doorsQuantity": 4,
+                    "hasSunroof": true
+                },
+                "employment": {
+                    "type": "FullTime",
+                    "salary": 5000,
+                    "bonus": 300
+                }
+            },
+            {
+                "id": 2,
+                "name": "Sandra de Sa",
+                "age": 60,
+                "vehicle": {
+                    "type": "Motorcycle",
+                    "make": "Harley-Davidson",
+                    "plate": "TG55RF",
+                    "powerCC": 500,
+                    "hasLuggageRack": true
+                },
+                "employment": {
+                    "type": "Intern",
+                    "salary": 1000
+                }
+            },
+            {
+                "id": 3,
+                "name": "John",
+                "age": 25,
+                "employment": {
+                    "type": "CommissionBasedPartTime",
+                    "rate": 30,
+                    "hoursWorked": 10,
+                    "commisionPerc": 20
+                }
+            }
+        ]
+    }
+"""
+
+//var payroll2 = Payroll()
+//
+//if let data = jsonString,
+//    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
+//    for case let result in json["employees"] {
+//        if let employee = Payroll(json: result) {
+//            payroll2.saveEmployeeOnPayroll(employee)
+//        }
 //    }
-//"""
+//}
+//print(payroll2.printMyData())
 //
 //let data = jsonString.data(using: String.Encoding.utf8, allowLossyConversion: false)!
 //do {
@@ -113,11 +125,6 @@ let partTimeFixedAmountEmployee1 = FixedBasedPartTime(rate: 30, hoursWorked: 10,
 //        // handle error
 //    }
 //}
-
-
-
-
-
 
 // save employees on Dictionary
 var payroll = Payroll()
