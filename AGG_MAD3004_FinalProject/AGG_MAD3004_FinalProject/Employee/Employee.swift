@@ -37,11 +37,6 @@ internal class Employee: IPrintable, Error {
         return 0
     }
     
-    func saveEmployee() {
-        // save in a dictionary first
-        // a plus is to save on JSON file
-    }
-    
     func printMyData() -> String {
         let birthYear = Employee()
         var message = "Name: \(self.name!)\n"
