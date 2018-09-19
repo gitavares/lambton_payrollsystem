@@ -18,8 +18,10 @@ internal class FullTime: Employee {
         self.salary = Double()
         self.bonus = Double()
     }
-    
-    init(salary: Double, bonus: Double, name: String, age: Int, vehicle: Vehicle){
+    // This init throws an Exception
+    init(salary: Double, bonus: Double, name: String, age: Int, vehicle: Vehicle) throws {
+        try validateSalary(salary: salary)
+        try validateBonus(bonus: bonus)
         super.init(name: name, age: age, vehicle: vehicle)
         self.salary = salary
         self.bonus = bonus
