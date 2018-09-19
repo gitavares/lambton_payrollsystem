@@ -9,37 +9,37 @@
 import Foundation
 
 // Exceptions
-enum EarningsError: Error {
+public enum EarningsError: Error {
     case NonZero
     case NonNegative(s: Double)
     case LessThanTwoThousand
 }
 
-enum RateError: Error {
+public enum RateError: Error {
     case NonZero
     case NonNegative(s: Double)
     case LessThanTwoThousand
 }
 
-enum ComissionError: Error {
+public enum ComissionError: Error {
     case NonZero
     case NonNegative(s: Double)
     case LessThanTwoThousand
 }
 
-enum HoursWorkedError: Error {
+public enum HoursWorkedError: Error {
     case NonZero
     case NonNegative(s: Double)
     case LessThanTwoThousand
 }
 
-enum FixedAmountError: Error {
+public enum FixedAmountError: Error {
     case NonZero
     case NonNegative(s: Double)
     case LessThanTwoThousand
 }
 
-func validateSalary(salary: Double) throws -> Bool {
+public func validateSalary(salary: Double) throws -> Bool {
     if salary == 0 {
         throw EarningsError.NonZero
     } else if salary < 0 {

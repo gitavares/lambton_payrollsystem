@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Intern: Employee {
+internal class Intern: Employee {
     var schoolName: String?
     var internSalary: Double?
     

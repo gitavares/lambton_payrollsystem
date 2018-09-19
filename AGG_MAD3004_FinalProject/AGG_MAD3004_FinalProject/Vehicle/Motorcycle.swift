@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Motorcycle: Vehicle {
+internal class Motorcycle: Vehicle {
     var powerCC: Int?
     var hasLuggageRack: Bool?
     

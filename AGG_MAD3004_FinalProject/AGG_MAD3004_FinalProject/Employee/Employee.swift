@@ -10,7 +10,7 @@ import Foundation
 
 // maybe this class won't be necessary
 
-class Employee: IPrintable, Error {
+internal class Employee: IPrintable, Error {
     var name: String?
     var age: Int?
     var vehicle: Vehicle?

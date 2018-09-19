@@ -8,7 +8,7 @@
 
 import Foundation
 
-class FullTime: Employee {
+internal class FullTime: Employee {
     var salary: Double?
     var bonus: Double?
     
