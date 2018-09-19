@@ -47,6 +47,7 @@ internal class Payroll: IPrintable {
         message += "TOTAL PAYROLL: \(calcTotalPayroll().currency) Canadian Dollars"
         message += ""
         
+        // --------------------------
         // saving results on TXT file
         let fileName = "payrollTotal"
         let DocumentDirURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)

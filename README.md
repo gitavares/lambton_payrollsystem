@@ -9,7 +9,7 @@ Giselle - gitavares@gmail.com
 Gurjeet - gurjit.babrah@gmail.com
 
 
-Sources:
+# Sources:
 - Access Control: https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html
 - Dictionary: https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html
 - JSON file: https://stackoverflow.com/questions/28240848/how-to-save-an-array-of-objects-to-nsuserdefault-with-swift/48438338#48438338

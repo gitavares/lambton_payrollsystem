@@ -18,6 +18,7 @@ internal class FullTime: Employee {
         self.salary = Double()
         self.bonus = Double()
     }
+    
     // This init throws an Exception
     init(salary: Double, bonus: Double, name: String, age: Int, vehicle: Vehicle) throws {
         try validateSalary(salary: salary)
@@ -26,12 +27,6 @@ internal class FullTime: Employee {
         self.salary = salary
         self.bonus = bonus
     }
-    
-    
-//    func setData(salary: Double, bonus: Double) {
-//        self.salary = salary
-//        self.bonus = bonus
-//    }
     
     override func calcEarnings() -> Double {
         return self.salary! + self.bonus!
