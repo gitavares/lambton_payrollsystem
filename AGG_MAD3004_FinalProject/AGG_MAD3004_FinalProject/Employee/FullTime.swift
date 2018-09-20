@@ -20,7 +20,7 @@ internal class FullTime: Employee {
     }
     
     // This init throws an Exception
-    init(salary: Double, bonus: Double, name: String, age: Int, vehicle: Vehicle) throws {
+    init(salary: Double, bonus: Double, name: String, age: Int, vehicle: Vehicle?) throws {
         try validateSalary(salary: salary)
         try validateBonus(bonus: bonus)
         super.init(name: name, age: age, vehicle: vehicle)
