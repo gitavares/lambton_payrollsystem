@@ -29,8 +29,8 @@ internal class Employee: IPrintable, Error {
     }
     
     // methods
-    func calcBirthYear(age: Int) -> Int {
-        return Date().year - age
+    func calcBirthYear() -> Int {
+        return Date().year - self.age!
     }
     
     func calcEarnings() -> Double {
@@ -38,9 +38,8 @@ internal class Employee: IPrintable, Error {
     }
     
     func printMyData() -> String {
-        let birthYear = Employee()
         var message = "Name: \(self.name!)\n"
-        message += "Year of Birth: \(birthYear.calcBirthYear(age: self.age!))\n"
+        message += "Year of Birth: \(calcBirthYear())\n"
         if vehicle == nil {
             message += "Employee has no Vehicle registered\n"
         } else {

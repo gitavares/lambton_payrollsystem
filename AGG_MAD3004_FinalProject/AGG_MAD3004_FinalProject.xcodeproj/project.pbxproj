@@ -29,7 +29,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
 			dstPath = usr/share/man/man1;
-			dstSubfolderSpec = 7;
+			dstSubfolderSpec = 0;
 			files = (
 				3C0DBA922151D6FA0099E291 /* Employees.json in CopyFiles */,
 			);
