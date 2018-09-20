@@ -89,3 +89,9 @@ do {
 }
 
 
+// call data from JSON - without any treatment. It's just showing data.
+//var callJSONData = JSONCall()
+//callJSONData.callJSON()
+
+
+
