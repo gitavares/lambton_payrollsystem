@@ -24,11 +24,11 @@ let vehicleMotorcycle3 = Motorcycle(make: "Harley-Davidson", plate: "BPT8711", p
 // Employees - objects and try catch
 do {
     let fullTimeEmployee1 = try FullTime(salary: 5000, bonus: 300, name: "Michael Jackson", age: 53, vehicle: vehicleCar1)
-    let internEmployee1 = try Intern(name: "Sandra de Sa", age: 60, schoolName: "Lambton College", internSalary: 1000, vehicle: vehicleMotorcycle1)
+    let internEmployee1 = Intern(name: "Sandra de Sa", age: 60, schoolName: "Lambton College", vehicle: vehicleMotorcycle1)
     let partTimeCommissionEmployee1 = try CommissionBasedPartTime(rate: 30, hoursWorked: 35, name: "John", age: 25, vehicle: vehicleCar2, commissionPerc: 20)
     let partTimeFixedAmountEmployee1 = try FixedBasedPartTime(rate: 30, hoursWorked: 15, name: "Cindy", age: 40, vehicle: nil, fixedAmount: 40)
     let fullTimeEmployee2 = try FullTime(salary: 4000, bonus: 700, name: "Brad Pitt", age: 30, vehicle: vehicleMotorcycle3)
-    let internEmployee2 = try Intern(name: "Lisa Simpson", age: 60, schoolName: "Lambton College Sarnia", internSalary: 1000, vehicle: nil)
+    let internEmployee2 = Intern(name: "Lisa Simpson", age: 60, schoolName: "Lambton College Sarnia", vehicle: nil)
     let partTimeCommissionEmployee2 = try CommissionBasedPartTime(rate: 65, hoursWorked: 80, name: "Wonder Woman", age: 37, vehicle: nil, commissionPerc: 15)
     let partTimeFixedAmountEmployee2 = try FixedBasedPartTime(rate: 20, hoursWorked: 40, name: "Peter Parker", age: 40, vehicle: vehicleCar3, fixedAmount: 40)
     
@@ -51,26 +51,20 @@ do {
     print(partTimeFixedAmountEmployee3.printMyData())
     
 
-} catch EarningsError.NonZero {
-    print("\nERROR!!! Earnings must be greater than zero!\n")
+} catch SalaryFullTimeError.NonZero {
+    print("\nERROR!!! Salary must be greater than zero!\n")
     print(sep2)
-} catch EarningsError.NonNegative {
-    print("\nERROR!!! Earnings must be greater than zero!\n")
+} catch SalaryFullTimeError.NonNegative {
+    print("\nERROR!!! Salary must be greater than zero!\n")
     print(sep2)
-} catch EarningsError.LessThanTwoThousand {
-    print("\nERROR!!! Earnings must be greater than $ 2000.00\n")
+} catch SalaryFullTimeError.LessThanTwoThousand {
+    print("\nERROR!!! Salary must be greater than $ 2000.00\n")
     print(sep2)
 } catch BonusError.NonZero {
     print("\nERROR!!! Bonus must be greater than zero!\n")
     print(sep2)
 } catch BonusError.NonNegative {
     print("\nERROR!!! Bonus must be greater than zero!\n")
-    print(sep2)
-} catch InternSalaryError.NonZero {
-    print("\nERROR!!! Intern salary must be greater than zero!")
-    print(sep2)
-} catch InternSalaryError.NonNegative {
-    print("\nERROR!!! Intern salary must be greater than zero!")
     print(sep2)
 } catch RateError.NonZero {
     print("\nERROR!!! Rate must be greater than zero!")
@@ -102,8 +96,8 @@ do {
 
 
 // call data from JSON - without any treatment. It's just showing data.
-var callJSONData = JSONCall()
-callJSONData.callJSON()
+//var callJSONData = JSONCall()
+//callJSONData.callJSON()
 
 
 

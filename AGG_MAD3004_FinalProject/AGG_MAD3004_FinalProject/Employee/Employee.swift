@@ -34,7 +34,7 @@ internal class Employee: IPrintable, Error {
     }
     
     func calcEarnings() -> Double {
-        return 0
+        return 1000
     }
     
     func printMyData() -> String {
