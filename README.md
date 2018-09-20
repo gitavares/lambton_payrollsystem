@@ -1,7 +1,7 @@
 # AGG_MAD3004_FinalProject
 F2018 - MAD3004 Term Project - Lambton College - Payroll System
 
-# Group Name: AGG
+# Group #1 - Name: AGG
 Antonio - merendaz@gmail.com
 
 Giselle - gitavares@gmail.com
