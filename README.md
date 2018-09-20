@@ -2,11 +2,11 @@
 F2018 - MAD3004 Term Project - Lambton College - Payroll System
 
 # Group #1 - Name: AGG
-Antonio - merendaz@gmail.com
+C0741427 - Antonio - merendaz@gmail.com
 
-Giselle - gitavares@gmail.com
+C0744277 - Giselle - gitavares@gmail.com
 
-Gurjeet - gurjit.babrah@gmail.com
+C0742612 - Gurjeet - gurjit.babrah@gmail.com
 
 # What we did - A summary:
 1 -	a) Abstract class Vehicle, with the children classes Car and Motorcycle.
