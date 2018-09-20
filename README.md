@@ -22,4 +22,5 @@ Gurjeet - gurjit.babrah@gmail.com
 - Access Control: https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html
 - Dictionary: https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html
 - To read and Write TXT file: https://stackoverflow.com/questions/45219896/mac-os-swift-writing-crash-log-to-text-file
+- To read a JSON data: https://github.com/SwiftyJSON/SwiftyJSON and https://www.hackingwithswift.com/example-code/system/how-to-parse-json-using-jsonserialization
 
