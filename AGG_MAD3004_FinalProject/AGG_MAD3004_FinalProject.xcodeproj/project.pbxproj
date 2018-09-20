@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C0DBA6021503C870099E291 /* Payroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DBA5F21503C870099E291 /* Payroll.swift */; };
 		3C0DBA76215070080099E291 /* Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DBA75215070080099E291 /* Exceptions.swift */; };
-		3C0DBA922151D6FA0099E291 /* Employees.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C0DBA912151D6FA0099E291 /* Employees.json */; };
+		3C8C62DD2153FDF3005F8B7E /* JSONCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8C62DC2153FDF3005F8B7E /* JSONCall.swift */; };
 		3CC586902144A9120068E691 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC5868F2144A9120068E691 /* main.swift */; };
 		3CC586972144A9390068E691 /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC586962144A9390068E691 /* IPrintable.swift */; };
 		3CC58699214705C70068E691 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC58698214705C70068E691 /* Vehicle.swift */; };
@@ -31,7 +31,6 @@
 			dstPath = usr/share/man/man1;
 			dstSubfolderSpec = 0;
 			files = (
-				3C0DBA922151D6FA0099E291 /* Employees.json in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -40,7 +39,7 @@
 /* Begin PBXFileReference section */
 		3C0DBA5F21503C870099E291 /* Payroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payroll.swift; sourceTree = "<group>"; };
 		3C0DBA75215070080099E291 /* Exceptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exceptions.swift; sourceTree = "<group>"; };
-		3C0DBA912151D6FA0099E291 /* Employees.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Employees.json; sourceTree = "<group>"; };
+		3C8C62DC2153FDF3005F8B7E /* JSONCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONCall.swift; sourceTree = "<group>"; };
 		3CC5868C2144A9120068E691 /* AGG_MAD3004_FinalProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AGG_MAD3004_FinalProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC5868F2144A9120068E691 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3CC586962144A9390068E691 /* IPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
@@ -99,7 +98,7 @@
 				3CC586AB214728B90068E691 /* Employee */,
 				3CC586AA214728480068E691 /* Vehicle */,
 				3CC5868F2144A9120068E691 /* main.swift */,
-				3C0DBA912151D6FA0099E291 /* Employees.json */,
+				3C8C62DC2153FDF3005F8B7E /* JSONCall.swift */,
 				3CC586AE214745260068E691 /* Utils.swift */,
 				3C0DBA75215070080099E291 /* Exceptions.swift */,
 			);
@@ -208,6 +207,7 @@
 				3CC586A1214706BC0068E691 /* CommissionBasedPartTime.swift in Sources */,
 				3CC58699214705C70068E691 /* Vehicle.swift in Sources */,
 				3CC586A92147264A0068E691 /* FullTime.swift in Sources */,
+				3C8C62DD2153FDF3005F8B7E /* JSONCall.swift in Sources */,
 				3CC5869D214705EB0068E691 /* Motorcycle.swift in Sources */,
 				3CC586A72147262D0068E691 /* Intern.swift in Sources */,
 				3C0DBA6021503C870099E291 /* Payroll.swift in Sources */,
