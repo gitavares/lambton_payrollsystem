@@ -17,6 +17,8 @@ Gurjeet - gurjit.babrah@gmail.com
 
 4 - Also on main, one Test Case Object with an error was created  just for Error Handling purposes.
 
+5 - The class JSONCall was made to show the data from a JSON pattern. We are not using it in the main project. Our intent here was just show the data from a JSON file.
+
 
 # Sources:
 - Access Control: https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html
