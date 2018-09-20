@@ -9,18 +9,13 @@
 import Foundation
 
 // Exceptions
-enum EarningsError: Error {
+enum SalaryFullTimeError: Error {
     case NonZero
     case NonNegative
     case LessThanTwoThousand
 }
 
 enum BonusError: Error {
-    case NonZero
-    case NonNegative
-}
-
-enum InternSalaryError: Error {
     case NonZero
     case NonNegative
 }
@@ -47,11 +42,11 @@ enum FixedAmountError: Error {
 
 func validateSalary(salary: Double) throws {
     if salary == 0 {
-        throw EarningsError.NonZero
+        throw SalaryFullTimeError.NonZero
     } else if salary < 0 {
-        throw EarningsError.NonNegative
+        throw SalaryFullTimeError.NonNegative
     } else if salary < 2000 {
-        throw EarningsError.LessThanTwoThousand
+        throw SalaryFullTimeError.LessThanTwoThousand
     }
 }
 
@@ -60,14 +55,6 @@ func validateBonus(bonus: Double) throws {
         throw BonusError.NonZero
     } else if bonus < 0 {
         throw BonusError.NonNegative
-    }
-}
-
-func validateInternSalary(internSalary: Double) throws {
-    if internSalary == 0 {
-        throw InternSalaryError.NonZero
-    } else if internSalary < 0 {
-        throw InternSalaryError.NonNegative
     }
 }
 
